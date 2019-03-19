@@ -10,10 +10,10 @@ bool cmp(char * a, char * b) {
 	return strlen(a) < strlen(b);
 }
 template <typename T>
-void sort(T * a ,size_t n){
+void msort(T * a ,size_t n){
 	if (n < 2) return;
-	sort(a, n / 2);  
-	sort(a + n / 2, n - n / 2);  
+	msort(a, n / 2);  
+	msort(a + n / 2, n - n / 2);  
 	int r1 = 0, r2 = 0;
 	T * b = new T[n];
 	while ((r1 < n / 2) && (r2 < n - n / 2)) {

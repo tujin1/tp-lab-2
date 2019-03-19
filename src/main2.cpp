@@ -7,7 +7,7 @@ T gen()
     return t++;
 }
 int main() {
-	auto * a = createArr<int, 10>(*gen);
+	auto * a = createArr<int, 10>(&gen);
 
 	for (int i = 0; i < 10; i++)
 		std::cout << a[i] << " ";

@@ -1,6 +1,9 @@
 #include <iostream>
 
 #include"task3.h"
+int change(int i) {
+	return i%3;
+}
 using namespace std;
 int main() {
 	const size_t n = 4;
